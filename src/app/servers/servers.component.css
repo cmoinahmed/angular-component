@@ -1,0 +1,74 @@
+/* General styling for the component container */
+div {
+    margin-bottom: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Label styling */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 8px;
+}
+
+/* Input box styling */
+input[type='text'] {
+    width: 250px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input[type='text']:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Paragraph styling */
+p {
+    font-size: 14px;
+    color: #555;
+    margin: 8px 0;
+}
+
+/* Styling for server creation message */
+p:nth-child(3) {
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Styling for "no server" message */
+ng-template p {
+    font-size: 14px;
+    color: #dc3545;
+}
+
+/* Add spacing for repeated server components */
+app-server {
+    display: block;
+    margin: 16px 0;
+}
