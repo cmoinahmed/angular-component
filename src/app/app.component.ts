@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'exam';
+
+  secretPassword = false;
+  log = [];
+
+  dispalyDetails() {
+    this.secretPassword = !this.secretPassword;
+    this.log.push(new Date());
+  }
+
 }
