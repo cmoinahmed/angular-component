@@ -1,0 +1,23 @@
+<div class="container">
+    <div 
+      class="row"
+      [ngClass]="{
+        'bg-success text-white': status === 'active',
+        'bg-warning text-dark': status === 'inactive',
+        'bg-danger text-white': status === 'critical'
+      }"
+      [ngStyle]="{
+        'border': '1px solid black',
+        'border-color': status === 'active' ? 'green' : (status === 'critical' ? 'red' : 'orange'),
+        'padding': '10px',
+        'margin': '10px 0'
+      }"
+    >
+      <div class="col-12">
+        <p>Server Name: {{ element.serverName }}</p>
+        <p>Server Content: {{ element.serverContent }}</p>
+        <p>Server Status: {{ status }}</p>
+      </div>
+    </div>
+  </div>
+  
