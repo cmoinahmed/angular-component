@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'parctice-component-call';
+  
+  serverElements = [
+    { newServerName: 'TestServer', newServerContent: 'Test Content', newServerStatus: 'active' }
+  ];
+
+  onServerAdded(serverData: { serverName: string; serverContent: string; serverStatus: string }) {
+    this.serverElements.push({
+      newServerName: serverData.serverName,
+      newServerContent: serverData.serverContent,
+      newServerStatus: serverData.serverStatus
+    });     
+  }
 }

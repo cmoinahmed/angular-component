@@ -1,0 +1,16 @@
+<div class="container mt-3">
+    <div class="row" [ngClass]="{
+        'bg-success text-white': element.newServerStatus === 'active',
+        'bg-warning text-dark': element.newServerStatus === 'inactive',
+        'bg-danger text-white': element.newServerStatus === 'critical'
+      }" [ngStyle]="{
+        backgroundColor: element.newServerStatus === 'active' ? 'green' :
+                         element.newServerStatus === 'critical' ? 'red' : 'orange'
+      }">
+        <div class="col-12">
+            <p>Server Name: {{ element.newServerName }}</p>
+            <p>Server Content: {{ element.newServerContent }}</p>
+            <p>Server Status: {{ element.newServerStatus }}</p>
+        </div>
+    </div>
+</div>

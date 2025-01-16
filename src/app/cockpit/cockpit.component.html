@@ -1,0 +1,36 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <h2 class="text-center mb-4">Add Server</h2>
+            <form>
+                <!-- Server Name -->
+                <div class="form-group mb-3">
+                    <label for="serverName" class="form-label">Server Name</label>
+                    <input type="text" id="serverName" class="form-control" placeholder="Enter server name"
+                        [(ngModel)]="serverName" name="serverName" />
+                </div>
+                <!-- Server Content -->
+                <div class="form-group mb-3">
+                    <label for="serverContent" class="form-label">Server Content</label>
+                    <input type="text" id="serverContent" class="form-control" placeholder="Enter server content"
+                        [(ngModel)]="serverContent" name="serverContent" />
+                </div>
+                <!-- Server Status -->
+                <div class="form-group mb-3">
+                    <label for="status" class="form-label">Server Status</label>
+                    <select id="status" class="form-select" [(ngModel)]="serverStatus" name="serverStatus">
+                        <option value="active">Active</option>
+                        <option value="inactive">Inactive</option>
+                        <option value="critical">Critical</option>
+                    </select>
+                </div>
+                <!-- Add Server Button -->
+                <div class="form-group text-center">
+                    <button class="btn btn-primary" type="button" (click)="onAddServer()">
+                        Add Server
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
