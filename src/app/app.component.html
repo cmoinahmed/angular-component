@@ -1,5 +1,8 @@
 <div class="row">
   <div class="col-12">
+    <app-cockpit (serverCreated)="onServerAdded($event)"></app-cockpit>
+  </div>
+  <div class="col-12">
     <app-server-element *ngFor="let serverElement of serverElements" [server]="serverElement"
       [status]="serverElement.status"></app-server-element>
   </div>

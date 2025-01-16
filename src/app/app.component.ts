@@ -23,4 +23,13 @@ export class AppComponent {
       status: 'inactive'
     }
   ];
+
+  onServerAdded(serverData: { serverName: string, serverContent: string, status: string }) {
+    this.serverElements.push({
+      serverName: serverData.serverName,
+      serverContent: serverData.serverContent,
+      status: serverData.status
+    });
+  }
+
 }
