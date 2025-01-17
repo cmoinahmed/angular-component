@@ -5,8 +5,7 @@
                 [ngStyle]="{'background-color': element.serverStatus === 'active' ? 'green' : (element.serverStatus === 'inactive' ? 'red' : 'orange')}"
                 [ngClass]="{'bg-success': element.serverStatus === 'active', 'bg-danger': element.serverStatus === 'inactive', 'bg-warning': element.serverStatus === 'critical'}">
                 <div class="card-body m-auto">
-                    <h5 class="card-title">{{element.serverName}} - {{element.serverStatus}} </h5>
-                    <p class="card-text">{{element.serverContent}}</p>
+                    <ng-content></ng-content>
                 </div>
             </div>
         </div>

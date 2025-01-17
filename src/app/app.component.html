@@ -6,10 +6,12 @@
   </div>
   <div class="row">
     <div class="col-12">
-      <app-server
-        *ngFor="let element of serverElements"
-        [server]="element"
-      ></app-server>
+      <app-server *ngFor="let element of serverElements" [server]="element"
+        ><h5 class="card-title">
+          {{ element.serverName }} - {{ element.serverStatus }}
+        </h5>
+        <p class="card-text">{{ element.serverContent }}</p></app-server
+      >
     </div>
   </div>
 </div>
