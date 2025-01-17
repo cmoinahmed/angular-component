@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row dflex justify-content-center">
+        <div class="col-10">
+            <label for="serverName" class="form-label">Server Name</label>
+            <input type="text" class="form-control" id="serverName" #serverNameInput>
+        </div>
+        <div class="col-10">
+            <label for="serverContent" class="form-label">Server Content</label>
+            <input type="text" class="form-control" id="serverContent" #serverContentInput>
+        </div>
+        <div class="col-10">
+            <label for="serverStatus" class="form-label">Server Status</label>
+            <select name="serverStatus" id="serverStatus" class="form-select" [(ngModel)]="serverStatus">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+                <option value="critical">Critical</option>
+            </select>
+        </div>
+        <div class="col-10 mt-3 align-items-center">
+            <button class="btn btn-primary" (click)="onAddServer(serverNameInput)">Add Server</button>
+        </div>
+    </div>
+</div>
