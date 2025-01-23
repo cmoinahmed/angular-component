@@ -1,0 +1,82 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1 class="display-4 fw-bold text-primary">Welcome to Contact Manager</h1>
+      <p class="lead text-secondary mt-3">
+        Effortlessly manage your contacts with our simple and intuitive
+        application. Add, view, edit, and delete contacts with ease!
+      </p>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-4 mb-4">
+      <div
+        class="card shadow-sm h-100"
+        (click)="navigateToContactList()"
+        style="cursor: pointer"
+      >
+        <div class="card-body text-center">
+          <i class="bi bi-person-plus-fill text-primary display-4"></i>
+          <h5 class="card-title fw-bold mt-3">Add New Contacts</h5>
+          <p class="card-text text-secondary">
+            Add important details like name, email, and phone number to keep
+            track of everyone in your network.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body text-center">
+          <i class="bi bi-card-list text-success display-4"></i>
+          <h5 class="card-title fw-bold mt-3">View Contact List</h5>
+          <p class="card-text text-secondary">
+            Access a complete list of your saved contacts at any time and search
+            for the information you need.
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <div class="col-md-4 mb-4">
+      <div
+        class="card shadow-sm h-100"
+        (click)="navigateToContactList()"
+        style="cursor: pointer"
+      >
+        <div class="card-body text-center">
+          <i class="bi bi-card-list text-success display-4"></i>
+          <h5 class="card-title fw-bold mt-3">View Contact List</h5>
+          <p class="card-text text-secondary">
+            Access a complete list of your saved contacts at any time and search
+            for the information you need.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div
+        class="card shadow-sm h-100"
+        (click)="navigateToContactList()"
+        style="cursor: pointer"
+      >
+        <div class="card-body text-center">
+          <i class="bi bi-pencil-square text-warning display-4"></i>
+          <h5 class="card-title fw-bold mt-3">Edit or Delete</h5>
+          <p class="card-text text-secondary">
+            Update contact details or remove outdated information with just a
+            few clicks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-12 text-center">
+      <button class="btn btn-primary btn-lg" (click)="navigateToContactList()">
+        View Contacts
+      </button>
+    </div>
+  </div>
+</div>
